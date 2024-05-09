@@ -1,0 +1,14 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: fleet-demo
+  namespace: fleet-local
+spec:
+  repo: https://github.com/wingkinho/fleetdemo.git
+  branch: main
+  paths:
+    - workspace/
+    - repos/testing
+    - repos/prod
+  targets:
+    - clusterSelector: {}

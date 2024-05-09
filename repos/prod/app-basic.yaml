@@ -1,0 +1,12 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: prod-app
+  namespace: prod
+spec:
+  repo: https://github.com/wingkinho/fleetdemo.git
+  branch: main
+  paths:
+    - app/basic
+  targets:
+    - clusterSelector: {}
