@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: testing-nginx-ingress
+  namespace: nginx-testing
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:
