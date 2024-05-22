@@ -16,7 +16,7 @@ spec:
       volumes:
       - name: nginx-pv-storage
         persistentVolumeClaim:
-          claimName: pv01
+          claimName: pvc01
       containers:
       - name: nginx
         image: nginx:alpine
