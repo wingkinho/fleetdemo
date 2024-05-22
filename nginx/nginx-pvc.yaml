@@ -5,7 +5,7 @@ metadata:
   namespace: nginx-testing
 spec:
   accessModes:
-   - ReadWriteOnce
+  - ReadWriteOnce
   resources:
-   requests:
-    storage: 100Mi
+    requests:
+      storage: 100Mi
